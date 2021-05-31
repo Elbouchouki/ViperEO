@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="images">
+    <file>logo_jst.png</file>
+    <file>logo_v_strocked.png</file>
+    <file>logo.png</file>
+    <file>logo_horizontal.png</file>
+    <file>logo_viperEO.png</file>
+    <file>viperEO.png</file>
+  </qresource>
+</RCC>
