@@ -7,6 +7,9 @@
     <file>logo_jst.png</file>
   </qresource>
   <qresource prefix="mine">
+    <file>cam.png</file>
+    <file>video.png</file>
+    <file>C:/Users/Agent1/Downloads/symbole-d'interface-d'image-avec-un-paysage.png</file>
     <file>linkedIn.png</file>
     <file>logo-linkedin (1).png</file>
     <file>www (1).png</file>

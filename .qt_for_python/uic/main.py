@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.0.0
+## Created by: Qt User Interface Compiler version 6.1.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
         font = QFont()
-        font.setFamily(u"Segoe UI")
+        font.setFamilies([u"Segoe UI"])
         font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
 "#extraIcon {\n"
 "  background-position: center;\n"
 "  background-repeat: no-repeat;\n"
-"  background-image: url(:/icons/images/icons/icon_settings.png);\n"
+"  background-image: url(:/icons/images/icons/cil-fire.png);\n"
 "}\n"
 "\n"
 "/* ---------------------------------- Label --------------------------------- */\n"
@@ -170,8 +170,8 @@ class Ui_MainWindow(object):
 "  color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
-"/* -------------------------------- Btn Close --------------------------"
-                        "----- */\n"
+"/* -------------------------------- Btn Close -------------------------------"
+                        " */\n"
 "#extraCloseColumnBtn {\n"
 "  background-color: rgba(255, 255, 255, 0);\n"
 "  border: none;\n"
@@ -206,8 +206,8 @@ class Ui_MainWindow(object):
 "#extraTopMenu .QPushButton:hover {\n"
 "  background-color: #18161b;\n"
 "}\n"
-"#extraTopMenu .QPushButto"
-                        "n:pressed {\n"
+"#extraTopMenu .QPushButton:pre"
+                        "ssed {\n"
 "  background-color: #bb86fc;\n"
 "  color: rgb(255, 255, 255);\n"
 "}\n"
@@ -245,8 +245,8 @@ class Ui_MainWindow(object):
 "  background-color: #bb86fc;\n"
 "}\n"
 "\n"
-""
-                        "/* ------------------------------- /Bottom Bar ------------------------------ */\n"
+"/*"
+                        " ------------------------------- /Bottom Bar ------------------------------ */\n"
 "#bottomBar {\n"
 "  background-color: #211c23;\n"
 "}\n"
@@ -277,8 +277,8 @@ class Ui_MainWindow(object):
 "  color: rgb(255, 255, 255);\n"
 "}\n"
 "\n"
-"/* ------------------------------ QTableWidget ---------------------------"
-                        "--- */\n"
+"/* ------------------------------ QTableWidget -----------------------------"
+                        "- */\n"
 "QTableWidget {\n"
 "  background-color: transparent;\n"
 "  padding: 10px;\n"
@@ -315,8 +315,8 @@ class Ui_MainWindow(object):
 "  border-top-right-radius: 7px;\n"
 "}\n"
 "QHeaderView::section:vertical {\n"
-"  border: 1"
-                        "px solid rgb(44, 49, 60);\n"
+"  border: 1px"
+                        " solid rgb(44, 49, 60);\n"
 "}\n"
 "\n"
 "/* -------------------------------- LineEdit -------------------------------- */\n"
@@ -1010,7 +1010,7 @@ class Ui_MainWindow(object):
         self.maximizeRestoreAppBtn.setMinimumSize(QSize(28, 28))
         self.maximizeRestoreAppBtn.setMaximumSize(QSize(28, 28))
         font1 = QFont()
-        font1.setFamily(u"Segoe UI")
+        font1.setFamilies([u"Segoe UI"])
         font1.setPointSize(10)
         font1.setBold(False)
         font1.setItalic(False)
@@ -1216,7 +1216,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 383, 212))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 353, 218))
         self.scrollAreaWidgetContents.setStyleSheet(u" QScrollBar:vertical {\n"
 "	border: none;\n"
 "    background: rgb(52, 59, 72);\n"
@@ -1306,7 +1306,7 @@ class Ui_MainWindow(object):
         if (self.tableWidget.rowCount() < 16):
             self.tableWidget.setRowCount(16)
         font2 = QFont()
-        font2.setFamily(u"Segoe UI")
+        font2.setFamilies([u"Segoe UI"])
         __qtablewidgetitem4 = QTableWidgetItem()
         __qtablewidgetitem4.setFont(font2);
         self.tableWidget.setVerticalHeaderItem(0, __qtablewidgetitem4)
@@ -2452,31 +2452,169 @@ class Ui_MainWindow(object):
         self.recognition_container.setObjectName(u"recognition_container")
         self.recognition_container.setFrameShape(QFrame.StyledPanel)
         self.recognition_container.setFrameShadow(QFrame.Raised)
-        self.gridLayoutWidget_3 = QWidget(self.recognition_container)
-        self.gridLayoutWidget_3.setObjectName(u"gridLayoutWidget_3")
-        self.gridLayoutWidget_3.setGeometry(QRect(59, 29, 871, 501))
-        self.gridLayout_18 = QGridLayout(self.gridLayoutWidget_3)
+        self.verticalLayout_46 = QVBoxLayout(self.recognition_container)
+        self.verticalLayout_46.setSpacing(0)
+        self.verticalLayout_46.setObjectName(u"verticalLayout_46")
+        self.verticalLayout_46.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_18 = QGridLayout()
         self.gridLayout_18.setObjectName(u"gridLayout_18")
-        self.gridLayout_18.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_19 = QGridLayout()
         self.gridLayout_19.setObjectName(u"gridLayout_19")
         self.gridLayout_22 = QGridLayout()
         self.gridLayout_22.setObjectName(u"gridLayout_22")
+        self.frame_26 = QFrame(self.recognition_container)
+        self.frame_26.setObjectName(u"frame_26")
+        self.frame_26.setFrameShape(QFrame.StyledPanel)
+        self.frame_26.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_22 = QHBoxLayout(self.frame_26)
+        self.horizontalLayout_22.setSpacing(0)
+        self.horizontalLayout_22.setObjectName(u"horizontalLayout_22")
+        self.horizontalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.frame_28 = QFrame(self.frame_26)
+        self.frame_28.setObjectName(u"frame_28")
+        self.frame_28.setFrameShape(QFrame.StyledPanel)
+        self.frame_28.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_25 = QHBoxLayout(self.frame_28)
+        self.horizontalLayout_25.setSpacing(0)
+        self.horizontalLayout_25.setObjectName(u"horizontalLayout_25")
+        self.horizontalLayout_25.setContentsMargins(20, 20, 20, 10)
+        self.recognition_label = QLabel(self.frame_28)
+        self.recognition_label.setObjectName(u"recognition_label")
+        self.recognition_label.setStyleSheet(u"border-radius:50px;\n"
+"")
+
+        self.horizontalLayout_25.addWidget(self.recognition_label)
+
+
+        self.horizontalLayout_22.addWidget(self.frame_28)
+
+        self.frame_29 = QFrame(self.frame_26)
+        self.frame_29.setObjectName(u"frame_29")
+        self.frame_29.setMinimumSize(QSize(300, 0))
+        self.frame_29.setMaximumSize(QSize(300, 16777215))
+        self.frame_29.setStyleSheet(u"QFrame{border-left:2px solid #211c23;}")
+        self.frame_29.setFrameShape(QFrame.StyledPanel)
+        self.frame_29.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_49 = QVBoxLayout(self.frame_29)
+        self.verticalLayout_49.setSpacing(10)
+        self.verticalLayout_49.setObjectName(u"verticalLayout_49")
+        self.verticalLayout_49.setContentsMargins(-1, 10, 10, 10)
+        self.frame_30 = QFrame(self.frame_29)
+        self.frame_30.setObjectName(u"frame_30")
+        self.frame_30.setStyleSheet(u"QFrame{border-left:0px}")
+        self.frame_30.setFrameShape(QFrame.StyledPanel)
+        self.frame_30.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_48 = QVBoxLayout(self.frame_30)
+        self.verticalLayout_48.setSpacing(0)
+        self.verticalLayout_48.setObjectName(u"verticalLayout_48")
+        self.verticalLayout_48.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_24 = QGridLayout()
+        self.gridLayout_24.setSpacing(0)
+        self.gridLayout_24.setObjectName(u"gridLayout_24")
+        self.frame_39 = QFrame(self.frame_30)
+        self.frame_39.setObjectName(u"frame_39")
+        self.frame_39.setFrameShape(QFrame.StyledPanel)
+        self.frame_39.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_56 = QVBoxLayout(self.frame_39)
+        self.verticalLayout_56.setSpacing(0)
+        self.verticalLayout_56.setObjectName(u"verticalLayout_56")
+        self.verticalLayout_56.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_25 = QGridLayout()
+        self.gridLayout_25.setObjectName(u"gridLayout_25")
+        self.gridLayout_25.setVerticalSpacing(10)
+        self.gridLayout_25.setContentsMargins(-1, -1, -1, 0)
+        self.labelVersion_20 = QLabel(self.frame_39)
+        self.labelVersion_20.setObjectName(u"labelVersion_20")
+        self.labelVersion_20.setStyleSheet(u"color: rgb(113, 126, 149);")
+        self.labelVersion_20.setLineWidth(1)
+        self.labelVersion_20.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_25.addWidget(self.labelVersion_20, 0, 0, 1, 1)
+
+        self.combobox_recognition_cam = QComboBox(self.frame_39)
+        self.combobox_recognition_cam.addItem("")
+        self.combobox_recognition_cam.addItem("")
+        self.combobox_recognition_cam.addItem("")
+        self.combobox_recognition_cam.setObjectName(u"combobox_recognition_cam")
+        self.combobox_recognition_cam.setFont(font)
+        self.combobox_recognition_cam.setAutoFillBackground(False)
+        self.combobox_recognition_cam.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+        self.combobox_recognition_cam.setIconSize(QSize(16, 16))
+        self.combobox_recognition_cam.setFrame(True)
+
+        self.gridLayout_25.addWidget(self.combobox_recognition_cam, 1, 0, 1, 1)
+
+
+        self.verticalLayout_56.addLayout(self.gridLayout_25)
+
+
+        self.gridLayout_24.addWidget(self.frame_39, 1, 0, 1, 2, Qt.AlignTop)
+
+        self.btnRecognitionByCamera = QPushButton(self.frame_30)
+        self.btnRecognitionByCamera.setObjectName(u"btnRecognitionByCamera")
+        self.btnRecognitionByCamera.setMinimumSize(QSize(30, 30))
+        self.btnRecognitionByCamera.setMaximumSize(QSize(50, 16777215))
+        self.btnRecognitionByCamera.setFont(font)
+        self.btnRecognitionByCamera.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btnRecognitionByCamera.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        icon13 = QIcon()
+        icon13.addFile(u":/mine/cam.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btnRecognitionByCamera.setIcon(icon13)
+
+        self.gridLayout_24.addWidget(self.btnRecognitionByCamera, 2, 1, 1, 1)
+
+        self.btnRecognitionByImage = QPushButton(self.frame_30)
+        self.btnRecognitionByImage.setObjectName(u"btnRecognitionByImage")
+        self.btnRecognitionByImage.setMinimumSize(QSize(30, 30))
+        self.btnRecognitionByImage.setMaximumSize(QSize(50, 16777215))
+        self.btnRecognitionByImage.setFont(font)
+        self.btnRecognitionByImage.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btnRecognitionByImage.setStyleSheet(u"background-color: rgb(52, 59, 72);")
+        icon14 = QIcon()
+        icon14.addFile(u":/mine/C:/Users/Agent1/Downloads/symbole-d'interface-d'image-avec-un-paysage.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.btnRecognitionByImage.setIcon(icon14)
+
+        self.gridLayout_24.addWidget(self.btnRecognitionByImage, 2, 0, 1, 1)
+
+
+        self.verticalLayout_48.addLayout(self.gridLayout_24)
+
+
+        self.verticalLayout_49.addWidget(self.frame_30)
+
+
+        self.horizontalLayout_22.addWidget(self.frame_29)
+
+
+        self.gridLayout_22.addWidget(self.frame_26, 0, 0, 1, 1)
+
 
         self.gridLayout_19.addLayout(self.gridLayout_22, 0, 0, 1, 1)
 
-        self.frame_21 = QFrame(self.gridLayoutWidget_3)
+        self.frame_21 = QFrame(self.recognition_container)
         self.frame_21.setObjectName(u"frame_21")
         self.frame_21.setMaximumSize(QSize(16777215, 100))
         self.frame_21.setFrameShape(QFrame.StyledPanel)
         self.frame_21.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_55 = QVBoxLayout(self.frame_21)
+        self.verticalLayout_55.setSpacing(0)
+        self.verticalLayout_55.setObjectName(u"verticalLayout_55")
+        self.verticalLayout_55.setContentsMargins(10, 10, 10, 10)
+        self.recognition_log = QPlainTextEdit(self.frame_21)
+        self.recognition_log.setObjectName(u"recognition_log")
+        self.recognition_log.setEnabled(False)
+        self.recognition_log.setMinimumSize(QSize(0, 0))
+        self.recognition_log.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+
+        self.verticalLayout_55.addWidget(self.recognition_log)
+
 
         self.gridLayout_19.addWidget(self.frame_21, 1, 0, 1, 1)
 
 
         self.gridLayout_18.addLayout(self.gridLayout_19, 1, 0, 1, 1)
 
-        self.frame_20 = QFrame(self.gridLayoutWidget_3)
+        self.frame_20 = QFrame(self.recognition_container)
         self.frame_20.setObjectName(u"frame_20")
         self.frame_20.setMinimumSize(QSize(0, 30))
         self.frame_20.setMaximumSize(QSize(16777215, 30))
@@ -2485,7 +2623,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_20 = QHBoxLayout(self.frame_20)
         self.horizontalLayout_20.setSpacing(0)
         self.horizontalLayout_20.setObjectName(u"horizontalLayout_20")
-        self.horizontalLayout_20.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_20.setContentsMargins(15, 0, 0, 0)
         self.error_recognition = QLabel(self.frame_20)
         self.error_recognition.setObjectName(u"error_recognition")
         self.error_recognition.setFont(font)
@@ -2497,11 +2635,178 @@ class Ui_MainWindow(object):
         self.gridLayout_18.addWidget(self.frame_20, 2, 0, 1, 1)
 
 
+        self.verticalLayout_46.addLayout(self.gridLayout_18)
+
+
         self.verticalLayout_42.addWidget(self.recognition_container)
 
         self.app_pages.addWidget(self.recognition)
         self.detection = QWidget()
         self.detection.setObjectName(u"detection")
+        self.verticalLayout_54 = QVBoxLayout(self.detection)
+        self.verticalLayout_54.setSpacing(0)
+        self.verticalLayout_54.setObjectName(u"verticalLayout_54")
+        self.verticalLayout_54.setContentsMargins(0, 0, 0, 0)
+        self.detection_container = QFrame(self.detection)
+        self.detection_container.setObjectName(u"detection_container")
+        self.detection_container.setFrameShape(QFrame.StyledPanel)
+        self.detection_container.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_51 = QVBoxLayout(self.detection_container)
+        self.verticalLayout_51.setSpacing(0)
+        self.verticalLayout_51.setObjectName(u"verticalLayout_51")
+        self.verticalLayout_51.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_26 = QGridLayout()
+        self.gridLayout_26.setObjectName(u"gridLayout_26")
+        self.gridLayout_27 = QGridLayout()
+        self.gridLayout_27.setObjectName(u"gridLayout_27")
+        self.gridLayout_28 = QGridLayout()
+        self.gridLayout_28.setObjectName(u"gridLayout_28")
+        self.frame_32 = QFrame(self.detection_container)
+        self.frame_32.setObjectName(u"frame_32")
+        self.frame_32.setFrameShape(QFrame.StyledPanel)
+        self.frame_32.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_23 = QHBoxLayout(self.frame_32)
+        self.horizontalLayout_23.setSpacing(0)
+        self.horizontalLayout_23.setObjectName(u"horizontalLayout_23")
+        self.horizontalLayout_23.setContentsMargins(0, 0, 0, 0)
+        self.frame_33 = QFrame(self.frame_32)
+        self.frame_33.setObjectName(u"frame_33")
+        self.frame_33.setFrameShape(QFrame.StyledPanel)
+        self.frame_33.setFrameShadow(QFrame.Raised)
+
+        self.horizontalLayout_23.addWidget(self.frame_33)
+
+        self.frame_34 = QFrame(self.frame_32)
+        self.frame_34.setObjectName(u"frame_34")
+        self.frame_34.setMinimumSize(QSize(300, 0))
+        self.frame_34.setMaximumSize(QSize(300, 16777215))
+        self.frame_34.setFrameShape(QFrame.StyledPanel)
+        self.frame_34.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_52 = QVBoxLayout(self.frame_34)
+        self.verticalLayout_52.setSpacing(0)
+        self.verticalLayout_52.setObjectName(u"verticalLayout_52")
+        self.verticalLayout_52.setContentsMargins(-1, 50, 50, 0)
+        self.frame_35 = QFrame(self.frame_34)
+        self.frame_35.setObjectName(u"frame_35")
+        self.frame_35.setFrameShape(QFrame.StyledPanel)
+        self.frame_35.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_53 = QVBoxLayout(self.frame_35)
+        self.verticalLayout_53.setSpacing(0)
+        self.verticalLayout_53.setObjectName(u"verticalLayout_53")
+        self.verticalLayout_53.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_29 = QGridLayout()
+        self.gridLayout_29.setObjectName(u"gridLayout_29")
+        self.gridLayout_29.setVerticalSpacing(10)
+        self.gridLayout_30 = QGridLayout()
+        self.gridLayout_30.setObjectName(u"gridLayout_30")
+        self.gridLayout_30.setVerticalSpacing(10)
+        self.gridLayout_30.setContentsMargins(-1, -1, -1, 0)
+        self.labelVersion_22 = QLabel(self.frame_35)
+        self.labelVersion_22.setObjectName(u"labelVersion_22")
+        self.labelVersion_22.setStyleSheet(u"color: rgb(113, 126, 149);")
+        self.labelVersion_22.setLineWidth(1)
+        self.labelVersion_22.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_30.addWidget(self.labelVersion_22, 0, 0, 1, 1)
+
+        self.comboBox_3 = QComboBox(self.frame_35)
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.setObjectName(u"comboBox_3")
+        self.comboBox_3.setFont(font)
+        self.comboBox_3.setAutoFillBackground(False)
+        self.comboBox_3.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+        self.comboBox_3.setIconSize(QSize(16, 16))
+        self.comboBox_3.setFrame(True)
+
+        self.gridLayout_30.addWidget(self.comboBox_3, 1, 0, 1, 1)
+
+
+        self.gridLayout_29.addLayout(self.gridLayout_30, 0, 0, 1, 1)
+
+        self.delete_comboBox_5 = QComboBox(self.frame_35)
+        self.delete_comboBox_5.addItem("")
+        self.delete_comboBox_5.addItem("")
+        self.delete_comboBox_5.addItem("")
+        self.delete_comboBox_5.setObjectName(u"delete_comboBox_5")
+        self.delete_comboBox_5.setFont(font)
+        self.delete_comboBox_5.setAutoFillBackground(False)
+        self.delete_comboBox_5.setStyleSheet(u"background-color: rgb(33, 37, 43);")
+        self.delete_comboBox_5.setIconSize(QSize(16, 16))
+        self.delete_comboBox_5.setFrame(True)
+
+        self.gridLayout_29.addWidget(self.delete_comboBox_5, 3, 0, 1, 1)
+
+        self.labelVersion_23 = QLabel(self.frame_35)
+        self.labelVersion_23.setObjectName(u"labelVersion_23")
+        self.labelVersion_23.setStyleSheet(u"color: rgb(113, 126, 149);")
+        self.labelVersion_23.setLineWidth(1)
+        self.labelVersion_23.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_29.addWidget(self.labelVersion_23, 2, 0, 1, 1)
+
+        self.frame_36 = QFrame(self.frame_35)
+        self.frame_36.setObjectName(u"frame_36")
+        self.frame_36.setMinimumSize(QSize(0, 30))
+        self.frame_36.setMaximumSize(QSize(16777215, 30))
+        self.frame_36.setFrameShape(QFrame.StyledPanel)
+        self.frame_36.setFrameShadow(QFrame.Raised)
+
+        self.gridLayout_29.addWidget(self.frame_36, 1, 0, 1, 1)
+
+
+        self.verticalLayout_53.addLayout(self.gridLayout_29)
+
+
+        self.verticalLayout_52.addWidget(self.frame_35, 0, Qt.AlignTop)
+
+
+        self.horizontalLayout_23.addWidget(self.frame_34)
+
+
+        self.gridLayout_28.addWidget(self.frame_32, 0, 0, 1, 1)
+
+
+        self.gridLayout_27.addLayout(self.gridLayout_28, 0, 0, 1, 1)
+
+        self.frame_37 = QFrame(self.detection_container)
+        self.frame_37.setObjectName(u"frame_37")
+        self.frame_37.setMaximumSize(QSize(16777215, 100))
+        self.frame_37.setFrameShape(QFrame.StyledPanel)
+        self.frame_37.setFrameShadow(QFrame.Raised)
+
+        self.gridLayout_27.addWidget(self.frame_37, 1, 0, 1, 1)
+
+
+        self.gridLayout_26.addLayout(self.gridLayout_27, 1, 0, 1, 1)
+
+        self.frame_38 = QFrame(self.detection_container)
+        self.frame_38.setObjectName(u"frame_38")
+        self.frame_38.setMinimumSize(QSize(0, 30))
+        self.frame_38.setMaximumSize(QSize(16777215, 30))
+        self.frame_38.setFrameShape(QFrame.StyledPanel)
+        self.frame_38.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_24 = QHBoxLayout(self.frame_38)
+        self.horizontalLayout_24.setSpacing(0)
+        self.horizontalLayout_24.setObjectName(u"horizontalLayout_24")
+        self.horizontalLayout_24.setContentsMargins(0, 0, 0, 0)
+        self.error_recognition_2 = QLabel(self.frame_38)
+        self.error_recognition_2.setObjectName(u"error_recognition_2")
+        self.error_recognition_2.setFont(font)
+        self.error_recognition_2.setStyleSheet(u"color:#c495fd;")
+
+        self.horizontalLayout_24.addWidget(self.error_recognition_2, 0, Qt.AlignBottom)
+
+
+        self.gridLayout_26.addWidget(self.frame_38, 2, 0, 1, 1)
+
+
+        self.verticalLayout_51.addLayout(self.gridLayout_26)
+
+
+        self.verticalLayout_54.addWidget(self.detection_container)
+
         self.app_pages.addWidget(self.detection)
 
         self.verticalLayout_15.addWidget(self.app_pages)
@@ -2648,7 +2953,7 @@ class Ui_MainWindow(object):
         self.creditsLabel.setObjectName(u"creditsLabel")
         self.creditsLabel.setMaximumSize(QSize(16777215, 16))
         font3 = QFont()
-        font3.setFamily(u"Segoe UI")
+        font3.setFamilies([u"Segoe UI"])
         font3.setBold(False)
         font3.setItalic(False)
         self.creditsLabel.setFont(font3)
@@ -2689,7 +2994,7 @@ class Ui_MainWindow(object):
 
         self.app_pages.setCurrentIndex(3)
         self.btn_management_overall.setDefault(False)
-        self.pages.setCurrentIndex(1)
+        self.pages.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -2944,7 +3249,26 @@ class Ui_MainWindow(object):
         self.labelVersion_16.setText(QCoreApplication.translate("MainWindow", u"Adress", None))
         self.update_adress.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Type the adress ...", None))
         self.btn_update_update.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.recognition_label.setText("")
+        self.labelVersion_20.setText(QCoreApplication.translate("MainWindow", u"Camera", None))
+        self.combobox_recognition_cam.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
+        self.combobox_recognition_cam.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
+        self.combobox_recognition_cam.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
+
+        self.btnRecognitionByCamera.setText("")
+        self.btnRecognitionByImage.setText("")
         self.error_recognition.setText(QCoreApplication.translate("MainWindow", u"Something went wrong ...", None))
+        self.labelVersion_22.setText(QCoreApplication.translate("MainWindow", u"Camera", None))
+        self.comboBox_3.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
+        self.comboBox_3.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
+        self.comboBox_3.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
+
+        self.delete_comboBox_5.setItemText(0, QCoreApplication.translate("MainWindow", u"Test 1", None))
+        self.delete_comboBox_5.setItemText(1, QCoreApplication.translate("MainWindow", u"Test 2", None))
+        self.delete_comboBox_5.setItemText(2, QCoreApplication.translate("MainWindow", u"Test 3", None))
+
+        self.labelVersion_23.setText(QCoreApplication.translate("MainWindow", u"Person", None))
+        self.error_recognition_2.setText(QCoreApplication.translate("MainWindow", u"Something went wrong ...", None))
         self.labelBoxBlenderInstalation_3.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:600; color:#ff79c6;\">Preferences</span></p></body></html>", None))
         self.labelBoxBlenderInstalation_2.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#bd93f9;\">Dark Mode </span></p></body></html>", None))
         self.btn_message.setText(QCoreApplication.translate("MainWindow", u"Message", None))
