@@ -2231,8 +2231,8 @@ background-repeat: no-repeat;</string>
                                 <rect>
                                  <x>0</x>
                                  <y>0</y>
-                                 <width>353</width>
-                                 <height>218</height>
+                                 <width>212</width>
+                                 <height>212</height>
                                 </rect>
                                </property>
                                <property name="styleSheet">
@@ -5783,7 +5783,7 @@ border-radius:0px;
                                               <string/>
                                              </property>
                                              <property name="icon">
-                                              <iconset resource="resources.qrc">
+                                              <iconset>
                                                <normaloff>:/mine/C:/Users/Agent1/Downloads/symbole-d'interface-d'image-avec-un-paysage.png</normaloff>:/mine/C:/Users/Agent1/Downloads/symbole-d'interface-d'image-avec-un-paysage.png</iconset>
                                              </property>
                                             </widget>
